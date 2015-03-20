@@ -7,6 +7,8 @@
 //
 
 #import "GameScene.h"
+#import "FactsScene.h"
+#import "OptionsScene.h"
 
 @implementation GameScene{
     UIButton *startButton;
@@ -38,6 +40,7 @@
     UIImage *buttonImageNormal = [UIImage imageNamed:@"StartBtn.png"];
     UIImage *stretchableButtonImageNormal = [buttonImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
     [startButton setBackgroundImage:stretchableButtonImageNormal forState:UIControlStateNormal];
+    [startButton addTarget:self action:@selector(moveToGame) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:startButton];
     
     optionsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -47,6 +50,7 @@
     UIImage *buttonOptionsImageNormal = [UIImage imageNamed:@"OptionsBtn.png"];
     UIImage *stretchableButtonOptionsImageNormal = [buttonOptionsImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
     [optionsButton setBackgroundImage:stretchableButtonOptionsImageNormal forState:UIControlStateNormal];
+    [optionsButton addTarget:self action:@selector(moveToOptions) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:optionsButton];
     
     exitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -56,7 +60,32 @@
     UIImage *buttonExitImageNormal = [UIImage imageNamed:@"ExitBtn.png"];
     UIImage *stretchableButtonExitImageNormal = [buttonExitImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
     [exitButton setBackgroundImage:stretchableButtonExitImageNormal forState:UIControlStateNormal];
+    [exitButton addTarget:self action:@selector(endApplication) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:exitButton];
+}
+
+-(void)moveToGame{
+    FactsScene *factsScence = [[FactsScene alloc] initWithSize:CGSizeMake(CGRectGetMaxX(self.frame), CGRectGetMaxY(self.frame))];
+    SKTransition *transition = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1];
+    [startButton removeFromSuperview];
+    [optionsButton removeFromSuperview];
+    [exitButton removeFromSuperview];
+    
+    [self.scene.view presentScene:factsScence transition:transition];
+}
+
+-(void)moveToOptions{
+    OptionsScene *optionsScene = [[OptionsScene alloc] initWithSize:CGSizeMake(CGRectGetMaxX(self.frame), CGRectGetMaxY(self.frame))];
+    SKTransition *transition = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1];
+    [startButton removeFromSuperview];
+    [optionsButton removeFromSuperview];
+    [exitButton removeFromSuperview];
+}
+
+-(void)endApplication{
+    [startButton removeFromSuperview];
+    [optionsButton removeFromSuperview];
+    [exitButton removeFromSuperview];
 }
 
 /*
