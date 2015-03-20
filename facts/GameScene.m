@@ -8,23 +8,59 @@
 
 #import "GameScene.h"
 
-@implementation GameScene
-
--(void)didMoveToView:(SKView *)view {
-    /* Setup your scene here */
-    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-    
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 65;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
-    
-    [self addChild:myLabel];
+@implementation GameScene{
+    UIButton *startButton;
+    UIButton *optionsButton;
+    UIButton *exitButton;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
+-(id)initWithSize:(CGSize)size{
+    /* Setup your scene here */
+    if (self = [super initWithSize:size]) {
+        self.backgroundColor = [SKColor colorWithRed:10.0/255.0 green:10.0/255.0 blue:10.0/255/0 alpha:1.0];
+        
+        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        myLabel.text = @"Facts!";
+        myLabel.fontSize = 65;
+        myLabel.position = CGPointMake(size.width/2, size.height/2 + myLabel.frame.size.height);
+        
+        [self addChild:myLabel];
+    }
     
+    return self;
+}
+
+-(void)didMoveToView:(SKView *)view {
+    startButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    startButton.frame = CGRectMake(CGRectGetMidX(self.frame) - 100, CGRectGetMidY(self.frame), 200, 70);
+    startButton.backgroundColor = [UIColor clearColor];
+    [startButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIImage *buttonImageNormal = [UIImage imageNamed:@"StartBtn.png"];
+    UIImage *stretchableButtonImageNormal = [buttonImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
+    [startButton setBackgroundImage:stretchableButtonImageNormal forState:UIControlStateNormal];
+    [self.view addSubview:startButton];
+    
+    optionsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    optionsButton.frame = CGRectMake(CGRectGetMidX(self.frame) - 100, CGRectGetMidY(self.frame) + 90, 200, 70);
+    optionsButton.backgroundColor = [SKColor clearColor];
+    [optionsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIImage *buttonOptionsImageNormal = [UIImage imageNamed:@"OptionsBtn.png"];
+    UIImage *stretchableButtonOptionsImageNormal = [buttonOptionsImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
+    [optionsButton setBackgroundImage:stretchableButtonOptionsImageNormal forState:UIControlStateNormal];
+    [self.view addSubview:optionsButton];
+    
+    exitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    exitButton.frame = CGRectMake(CGRectGetMidX(self.frame) - 100, CGRectGetMidY(self.frame) + 180, 200, 70);
+    exitButton.backgroundColor = [UIColor clearColor];
+    [exitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIImage *buttonExitImageNormal = [UIImage imageNamed:@"ExitBtn.png"];
+    UIImage *stretchableButtonExitImageNormal = [buttonExitImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
+    [exitButton setBackgroundImage:stretchableButtonExitImageNormal forState:UIControlStateNormal];
+    [self.view addSubview:exitButton];
+}
+
+/*
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
@@ -41,6 +77,7 @@
         [self addChild:sprite];
     }
 }
+*/
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */

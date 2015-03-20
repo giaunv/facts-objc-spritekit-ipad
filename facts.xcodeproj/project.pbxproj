@@ -16,6 +16,20 @@
 		94A50A281ABBA02200905E82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A271ABBA02200905E82 /* Images.xcassets */; };
 		94A50A2B1ABBA02200905E82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A291ABBA02200905E82 /* LaunchScreen.xib */; };
 		94A50A371ABBA02200905E82 /* factsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A50A361ABBA02200905E82 /* factsTests.m */; };
+		94A50A4E1ABBA36B00905E82 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A401ABBA36B00905E82 /* back.png */; };
+		94A50A4F1ABBA36B00905E82 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A411ABBA36B00905E82 /* background.png */; };
+		94A50A501ABBA36B00905E82 /* ExitBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A421ABBA36B00905E82 /* ExitBtn.png */; };
+		94A50A511ABBA36B00905E82 /* falseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A431ABBA36B00905E82 /* falseBtn.png */; };
+		94A50A521ABBA36B00905E82 /* OptionsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A441ABBA36B00905E82 /* OptionsBtn.png */; };
+		94A50A531ABBA36B00905E82 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A451ABBA36B00905E82 /* right.mp3 */; };
+		94A50A541ABBA36B00905E82 /* StartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A461ABBA36B00905E82 /* StartBtn.png */; };
+		94A50A551ABBA36B00905E82 /* transparentCenterBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A471ABBA36B00905E82 /* transparentCenterBorder.png */; };
+		94A50A561ABBA36B00905E82 /* trueBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A481ABBA36B00905E82 /* trueBtn.png */; };
+		94A50A571ABBA36B00905E82 /* appleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A491ABBA36B00905E82 /* appleLogo.png */; };
+		94A50A581ABBA36B00905E82 /* hearth.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A4A1ABBA36B00905E82 /* hearth.png */; };
+		94A50A591ABBA36B00905E82 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A4B1ABBA36B00905E82 /* music.mp3 */; };
+		94A50A5A1ABBA36B00905E82 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A4C1ABBA36B00905E82 /* beep.mp3 */; };
+		94A50A5B1ABBA36B00905E82 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A4D1ABBA36B00905E82 /* wrong.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,20 @@
 		94A50A301ABBA02200905E82 /* factsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = factsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A50A351ABBA02200905E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94A50A361ABBA02200905E82 /* factsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = factsTests.m; sourceTree = "<group>"; };
+		94A50A401ABBA36B00905E82 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		94A50A411ABBA36B00905E82 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		94A50A421ABBA36B00905E82 /* ExitBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitBtn.png; sourceTree = "<group>"; };
+		94A50A431ABBA36B00905E82 /* falseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = falseBtn.png; sourceTree = "<group>"; };
+		94A50A441ABBA36B00905E82 /* OptionsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OptionsBtn.png; sourceTree = "<group>"; };
+		94A50A451ABBA36B00905E82 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		94A50A461ABBA36B00905E82 /* StartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartBtn.png; sourceTree = "<group>"; };
+		94A50A471ABBA36B00905E82 /* transparentCenterBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentCenterBorder.png; sourceTree = "<group>"; };
+		94A50A481ABBA36B00905E82 /* trueBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trueBtn.png; sourceTree = "<group>"; };
+		94A50A491ABBA36B00905E82 /* appleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appleLogo.png; sourceTree = "<group>"; };
+		94A50A4A1ABBA36B00905E82 /* hearth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearth.png; sourceTree = "<group>"; };
+		94A50A4B1ABBA36B00905E82 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		94A50A4C1ABBA36B00905E82 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		94A50A4D1ABBA36B00905E82 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +132,20 @@
 		94A50A151ABBA02100905E82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94A50A401ABBA36B00905E82 /* back.png */,
+				94A50A411ABBA36B00905E82 /* background.png */,
+				94A50A421ABBA36B00905E82 /* ExitBtn.png */,
+				94A50A431ABBA36B00905E82 /* falseBtn.png */,
+				94A50A441ABBA36B00905E82 /* OptionsBtn.png */,
+				94A50A451ABBA36B00905E82 /* right.mp3 */,
+				94A50A461ABBA36B00905E82 /* StartBtn.png */,
+				94A50A471ABBA36B00905E82 /* transparentCenterBorder.png */,
+				94A50A481ABBA36B00905E82 /* trueBtn.png */,
+				94A50A491ABBA36B00905E82 /* appleLogo.png */,
+				94A50A4A1ABBA36B00905E82 /* hearth.png */,
+				94A50A4B1ABBA36B00905E82 /* music.mp3 */,
+				94A50A4C1ABBA36B00905E82 /* beep.mp3 */,
+				94A50A4D1ABBA36B00905E82 /* wrong.mp3 */,
 				94A50A161ABBA02100905E82 /* Info.plist */,
 				94A50A171ABBA02100905E82 /* main.m */,
 			);
@@ -208,9 +250,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A50A2B1ABBA02200905E82 /* LaunchScreen.xib in Resources */,
+				94A50A4F1ABBA36B00905E82 /* background.png in Resources */,
+				94A50A501ABBA36B00905E82 /* ExitBtn.png in Resources */,
+				94A50A5A1ABBA36B00905E82 /* beep.mp3 in Resources */,
+				94A50A5B1ABBA36B00905E82 /* wrong.mp3 in Resources */,
+				94A50A4E1ABBA36B00905E82 /* back.png in Resources */,
 				94A50A281ABBA02200905E82 /* Images.xcassets in Resources */,
+				94A50A531ABBA36B00905E82 /* right.mp3 in Resources */,
 				94A50A201ABBA02100905E82 /* GameScene.sks in Resources */,
+				94A50A561ABBA36B00905E82 /* trueBtn.png in Resources */,
+				94A50A591ABBA36B00905E82 /* music.mp3 in Resources */,
+				94A50A551ABBA36B00905E82 /* transparentCenterBorder.png in Resources */,
+				94A50A521ABBA36B00905E82 /* OptionsBtn.png in Resources */,
+				94A50A541ABBA36B00905E82 /* StartBtn.png in Resources */,
+				94A50A511ABBA36B00905E82 /* falseBtn.png in Resources */,
 				94A50A261ABBA02100905E82 /* Main.storyboard in Resources */,
+				94A50A581ABBA36B00905E82 /* hearth.png in Resources */,
+				94A50A571ABBA36B00905E82 /* appleLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
