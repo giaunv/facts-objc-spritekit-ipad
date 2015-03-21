@@ -80,6 +80,8 @@
     [startButton removeFromSuperview];
     [optionsButton removeFromSuperview];
     [exitButton removeFromSuperview];
+    
+    [self.scene.view presentScene:optionsScene transition:transition];
 }
 
 -(void)endApplication{

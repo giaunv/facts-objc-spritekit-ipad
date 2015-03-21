@@ -10,4 +10,5 @@
 
 @interface OptionsScene : SKScene
 
+@property (nonatomic, retain) UIButton* backButton;
 @end
