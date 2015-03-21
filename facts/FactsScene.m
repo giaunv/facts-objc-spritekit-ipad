@@ -97,6 +97,20 @@
     
     SKAction* updateTimerS = [SKAction sequence:@[wait, updateTimer]];
     [self runAction:[SKAction repeatActionForever:updateTimerS]];
+    
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"LevelDescription" ofType:@"plist"];
+    NSMutableDictionary* dictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    if ([dictionary objectForKey:@"Questions"] != nil) {
+        NSMutableArray* array = [dictionary objectForKey:@"Questions"];
+        
+        for (int i = 0; i < [array count]; i++) {
+            NSMutableDictionary* questions = [array objectAtIndex:i];
+            NSLog(@"ID %@", [questions objectForKey:@"id"]);
+            NSLog(@"%@", [questions objectForKey:@"statement"]);
+            NSLog(@"%@", [questions objectForKey:@"isCorrect"]);
+            NSLog(@"%@", [questions objectForKey:@"additionalInfo"]);
+        }
+    }
 }
 
 -(void)updateTimer{

@@ -33,6 +33,7 @@
 		94A50A5E1ABCE50000905E82 /* FactsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A50A5D1ABCE50000905E82 /* FactsScene.m */; };
 		94A50A611ABCE54700905E82 /* OptionsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A50A601ABCE54700905E82 /* OptionsScene.m */; };
 		94A50A641ABD2DB000905E82 /* LevelSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A50A631ABD2DB000905E82 /* LevelSelect.m */; };
+		94A50A661ABD6D0100905E82 /* LevelDescription.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A651ABD6D0100905E82 /* LevelDescription.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		94A50A601ABCE54700905E82 /* OptionsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsScene.m; sourceTree = "<group>"; };
 		94A50A621ABD2DB000905E82 /* LevelSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelect.h; sourceTree = "<group>"; };
 		94A50A631ABD2DB000905E82 /* LevelSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelect.m; sourceTree = "<group>"; };
+		94A50A651ABD6D0100905E82 /* LevelDescription.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LevelDescription.plist; path = ../LevelDescription.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		94A50A151ABBA02100905E82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94A50A651ABD6D0100905E82 /* LevelDescription.plist */,
 				94A50A401ABBA36B00905E82 /* back.png */,
 				94A50A411ABBA36B00905E82 /* background.png */,
 				94A50A421ABBA36B00905E82 /* ExitBtn.png */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A50A2B1ABBA02200905E82 /* LaunchScreen.xib in Resources */,
+				94A50A661ABD6D0100905E82 /* LevelDescription.plist in Resources */,
 				94A50A4F1ABBA36B00905E82 /* background.png in Resources */,
 				94A50A501ABBA36B00905E82 /* ExitBtn.png in Resources */,
 				94A50A5A1ABBA36B00905E82 /* beep.mp3 in Resources */,

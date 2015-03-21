@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Questions</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<integer>10</integer>
+			<key>statement</key>
+			<string>The tallest skyscraper in the world is found in Venice, Italy.</string>
+			<key>isCorrect</key>
+			<integer>0</integer>
+			<key>additionalInfo</key>
+			<string>The tallest skyscraper in the world is found in Dubai</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>9</integer>
+			<key>statement</key>
+			<string>The world&apos;s longest bridge is in the USA.</string>
+			<key>isCorrect</key>
+			<integer>0</integer>
+			<key>additionalInfo</key>
+			<string>The world&apos;s longest bridge is in China</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>8</integer>
+			<key>statement</key>
+			<string>Kuala Lumpur is the capital of Malaysia.</string>
+			<key>isCorrect</key>
+			<integer>1</integer>
+			<key>additionalInfo</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>7</integer>
+			<key>statement</key>
+			<string>Nairobi is the capital of France.</string>
+			<key>isCorrect</key>
+			<integer>0</integer>
+			<key>additionalInfo</key>
+			<string>Nairobi is the capital of Kenya</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>6</integer>
+			<key>statement</key>
+			<string>The Brandenburg Gate is in Paris.</string>
+			<key>isCorrect</key>
+			<integer>0</integer>
+			<key>additionalInfo</key>
+			<string>The Brandenburg Gate is in Berlin</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>5</integer>
+			<key>statement</key>
+			<string>Mexico City has more inhabitants than New York.</string>
+			<key>isCorrect</key>
+			<integer>1</integer>
+			<key>additionalInfo</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>4</integer>
+			<key>statement</key>
+			<string>Tokyo is the largest metropolitan area in the world.</string>
+			<key>isCorrect</key>
+			<integer>1</integer>
+			<key>additionalInfo</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>3</integer>
+			<key>statement</key>
+			<string>Paris is the capital of France.</string>
+			<key>isCorrect</key>
+			<integer>1</integer>
+			<key>additionalInfo</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>2</integer>
+			<key>statement</key>
+			<string>New York is the capital of Florida.</string>
+			<key>isCorrect</key>
+			<integer>0</integer>
+			<key>additionalInfo</key>
+			<string>Tallahassee is the capital of Florida</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>1</integer>
+			<key>statement</key>
+			<string>Melbourne is the capital of Australia</string>
+			<key>isCorrect</key>
+			<integer>0</integer>
+			<key>additionalInfo</key>
+			<string>Canberra is the capital of Australia</string>
+		</dict>
+	</array>
+</dict>
+</plist>
