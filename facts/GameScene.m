@@ -9,6 +9,7 @@
 #import "GameScene.h"
 #import "FactsScene.h"
 #import "OptionsScene.h"
+#import "LevelSelect.h"
 
 @implementation GameScene{
     UIButton *startButton;
@@ -65,7 +66,7 @@
 }
 
 -(void)moveToGame{
-    FactsScene *factsScence = [[FactsScene alloc] initWithSize:CGSizeMake(CGRectGetMaxX(self.frame), CGRectGetMaxY(self.frame))];
+    LevelSelect *factsScence = [[LevelSelect alloc] initWithSize:CGSizeMake(CGRectGetMaxX(self.frame), CGRectGetMaxY(self.frame))];
     SKTransition *transition = [SKTransition revealWithDirection:SKTransitionDirectionUp duration:1];
     [startButton removeFromSuperview];
     [optionsButton removeFromSuperview];
