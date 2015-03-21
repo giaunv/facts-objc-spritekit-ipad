@@ -8,6 +8,7 @@
 
 #import "FactsScene.h"
 #import "GameScene.h"
+#import "factObject.h"
 
 @implementation FactsScene{
     NSUserDefaults* defaults;
@@ -16,6 +17,11 @@
     NSInteger playerLives;
     NSInteger playerLevel;
     int maximumTime;
+    
+    NSMutableArray* statements;
+    int randomQuestion;
+    int questionNumber;
+    int totalRightQuestions; // need 7 out of 10 to pass to the next level
 }
 
 -(id)initWithSize:(CGSize)size inLevel:(NSInteger)level withPlayerLives:(int)lives{
@@ -27,6 +33,27 @@
         playerLevel = level;
         
         maximumTime = 30;
+        
+        questionNumber = 1;
+        totalRightQuestions = 0;
+        
+        statements = [[NSMutableArray alloc] init];
+        NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"LevelDescription" ofType:@"plist"];
+        NSMutableDictionary* dictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+        
+        if ([dictionary objectForKey:@"Questions"] != nil) {
+            NSMutableArray* array = [dictionary objectForKey:@"Questions"];
+            
+            for (int i = 0; i < [array count]; i++) {
+                NSMutableDictionary* questions = [array objectAtIndex:i];
+                factObject* stat = [factObject new];
+                stat.factID = [[questions objectForKey:@"id"] intValue];
+                stat.statement = [questions objectForKey:@"statement"];
+                stat.isCorrect = [[questions objectForKey:@"isCorrect"] integerValue];
+                stat.additionalInfo = [questions objectForKey:@"additionalInfo"];
+                [statements addObject:stat];
+            }
+        }
     }
     
     return self;
@@ -97,20 +124,6 @@
     
     SKAction* updateTimerS = [SKAction sequence:@[wait, updateTimer]];
     [self runAction:[SKAction repeatActionForever:updateTimerS]];
-    
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"LevelDescription" ofType:@"plist"];
-    NSMutableDictionary* dictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-    if ([dictionary objectForKey:@"Questions"] != nil) {
-        NSMutableArray* array = [dictionary objectForKey:@"Questions"];
-        
-        for (int i = 0; i < [array count]; i++) {
-            NSMutableDictionary* questions = [array objectAtIndex:i];
-            NSLog(@"ID %@", [questions objectForKey:@"id"]);
-            NSLog(@"%@", [questions objectForKey:@"statement"]);
-            NSLog(@"%@", [questions objectForKey:@"isCorrect"]);
-            NSLog(@"%@", [questions objectForKey:@"additionalInfo"]);
-        }
-    }
 }
 
 -(void)updateTimer{

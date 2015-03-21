@@ -34,6 +34,7 @@
 		94A50A611ABCE54700905E82 /* OptionsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A50A601ABCE54700905E82 /* OptionsScene.m */; };
 		94A50A641ABD2DB000905E82 /* LevelSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A50A631ABD2DB000905E82 /* LevelSelect.m */; };
 		94A50A661ABD6D0100905E82 /* LevelDescription.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A50A651ABD6D0100905E82 /* LevelDescription.plist */; };
+		94A50A691ABD7B4B00905E82 /* factObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A50A681ABD7B4B00905E82 /* factObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		94A50A621ABD2DB000905E82 /* LevelSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelect.h; sourceTree = "<group>"; };
 		94A50A631ABD2DB000905E82 /* LevelSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelect.m; sourceTree = "<group>"; };
 		94A50A651ABD6D0100905E82 /* LevelDescription.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LevelDescription.plist; path = ../LevelDescription.plist; sourceTree = "<group>"; };
+		94A50A671ABD7B4B00905E82 /* factObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = factObject.h; sourceTree = "<group>"; };
+		94A50A681ABD7B4B00905E82 /* factObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = factObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				94A50A1F1ABBA02100905E82 /* GameScene.sks */,
 				94A50A5C1ABCE4FF00905E82 /* FactsScene.h */,
 				94A50A5D1ABCE50000905E82 /* FactsScene.m */,
+				94A50A671ABD7B4B00905E82 /* factObject.h */,
+				94A50A681ABD7B4B00905E82 /* factObject.m */,
 				94A50A5F1ABCE54700905E82 /* OptionsScene.h */,
 				94A50A601ABCE54700905E82 /* OptionsScene.m */,
 				94A50A211ABBA02100905E82 /* GameViewController.h */,
@@ -307,6 +312,7 @@
 				94A50A1B1ABBA02100905E82 /* AppDelegate.m in Sources */,
 				94A50A1E1ABBA02100905E82 /* GameScene.m in Sources */,
 				94A50A611ABCE54700905E82 /* OptionsScene.m in Sources */,
+				94A50A691ABD7B4B00905E82 /* factObject.m in Sources */,
 				94A50A641ABD2DB000905E82 /* LevelSelect.m in Sources */,
 				94A50A181ABBA02100905E82 /* main.m in Sources */,
 				94A50A5E1ABCE50000905E82 /* FactsScene.m in Sources */,

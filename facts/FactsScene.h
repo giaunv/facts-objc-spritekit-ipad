@@ -18,6 +18,11 @@
 @property (nonatomic, weak) SKLabelNode* timerLevel;
 @property (nonatomic, retain) UIButton* trueButton;
 @property (nonatomic, retain) UIButton* falseButton;
+@property (nonatomic, retain) UILabel* questionLabel;
+@property (nonatomic, retain) SKSpriteNode* backgroundStatement;
+@property (nonatomic, retain) UIButton* nextQuestion;
+@property (nonatomic, retain) SKSpriteNode* wrong;
+@property (nonatomic, retain) SKSpriteNode* correct;
 
 -(id) initWithSize:(CGSize)size inLevel:(NSInteger)level withPlayerLives:(int)lives;
 @end
