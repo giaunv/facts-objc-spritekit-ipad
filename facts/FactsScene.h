@@ -7,7 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface FactsScene : SKScene
-
+@property (nonatomic, strong) AVAudioPlayer* musicPlayer;
 @end

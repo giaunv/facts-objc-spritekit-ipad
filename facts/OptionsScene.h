@@ -11,4 +11,8 @@
 @interface OptionsScene : SKScene
 
 @property (nonatomic, retain) UIButton* backButton;
+@property (nonatomic, retain) IBOutlet UISwitch* musicSwitch;
+@property (nonatomic, retain) IBOutlet UISwitch* soundSwitch;
+@property (nonatomic, retain) SKLabelNode* soundTitle;
+@property (nonatomic, retain) SKLabelNode* musicTitle;
 @end
