@@ -22,7 +22,7 @@
 
 -(void)didMoveToView:(SKView *)view{
     _backButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _backButton.frame = CGRectMake(CGRectGetMidX(self.frame) - 100, CGRectGetMidY(self.frame) - 100, 200, 70.0);
+    _backButton.frame = CGRectMake(CGRectGetMidX(self.frame) - 100, CGRectGetMaxY(self.frame) - 100, 200, 70.0);
     _backButton.backgroundColor = [UIColor clearColor];
     [_backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     UIImage* buttonExitImageNormal = [UIImage imageNamed:@"back.png"];
