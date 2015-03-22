@@ -114,12 +114,19 @@
     [_falseButton setTag:0];
     [self.view addSubview:_falseButton];
     
+    _currentLevelLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    _currentLevelLabel.text = [[NSString alloc] initWithFormat:@"Level: %ld of 10", (long)questionNumber];
+    _currentLevelLabel.fontSize = 15;
+    _currentLevelLabel.position = CGPointMake(CGRectGetMinX(self.frame)+90, CGRectGetMaxY(self.frame)-50);
+    // TODO: Bug: terminating with uncaught exception of type NSException
+    // [self addChild:_currentLevelLabel];
+    
     _timerLevel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     _timerLevel.text = @"60";
     _timerLevel.fontSize = 70;
     _timerLevel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 350);
     // TODO: Bug: terminating with uncaught exception of type NSException
-    [self addChild:_timerLevel];
+    // [self addChild:_timerLevel];
     
     SKAction* wait = [SKAction waitForDuration:1];
     SKAction* updateTimer = [SKAction runBlock:^{
