@@ -15,6 +15,7 @@
     UIButton *startButton;
     UIButton *optionsButton;
     UIButton *exitButton;
+    NSUserDefaults* defaults;
 }
 
 -(id)initWithSize:(CGSize)size{
@@ -34,6 +35,9 @@
 }
 
 -(void)didMoveToView:(SKView *)view {
+    defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:1 forKey:@"actualPlayerLevel"];
+    
     startButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     startButton.frame = CGRectMake(CGRectGetMidX(self.frame) - 100, CGRectGetMidY(self.frame), 200, 70);
     startButton.backgroundColor = [UIColor clearColor];

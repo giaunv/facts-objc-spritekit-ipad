@@ -8,9 +8,12 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface LevelSelect : SKScene<UITableViewDataSource, UITableViewDelegate>
+@interface LevelSelect : SKScene <UITableViewDataSource, UITableViewDelegate>
+
 @property (nonatomic, retain) UIButton* backButton;
-@property (retain, nonatomic) IBOutlet UITableView* tableView;
-@property (strong, nonatomic) NSArray* levelsArray;
-@property (strong, nonatomic) NSArray* levelsDescriptionArray;
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *levelsArray;
+@property (strong, nonatomic) NSArray *levelsDescriptionArray;
+
 @end
+
